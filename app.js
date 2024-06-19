@@ -35,6 +35,9 @@ const imagenPutURl = document.getElementById("imagenPutURl")
     let urlecoded = encodeURIComponent(linkImagen);
     let textoEncoded = encodeURIComponent(texto);
 
-    imagenPutURl.src = `https://quickchart.io/qr?text=${textoEncoded}&light=${ColorFrente}&margin=${margen}&dark=${ColorAtras}&size=${TamañoImagen}&format=png&centerImageUrl=${urlecoded}&centerImageSizeRatio=${centerImageSizeRatio}`
+
+    console.log(margen)
+
+    imagenPutURl.src = `https://quickchart.io/qr?text=${textoEncoded}&light=${ColorFrente}&dark=${ColorAtras}&margin=${margen}&size=${TamañoImagen}&format=png&centerImageUrl=${urlecoded}&centerImageSizeRatio=${centerImageSizeRatio}`
 
 }
